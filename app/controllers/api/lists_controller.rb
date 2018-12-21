@@ -10,7 +10,7 @@ class Api::ListsController < ApplicationController
   end
 
   def create
-    list = List.all(list_params)
+    list = List.new(list_params)
 
     if list.save
       render json: list 
