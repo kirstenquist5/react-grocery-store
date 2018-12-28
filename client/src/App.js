@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import NoMatch from './components/NoMatch';
 import Lists from './components/Lists'
+import List from './components/List'
 
 const App = () => (
   <Fragment>
@@ -13,6 +14,7 @@ const App = () => (
       <Route exact path='/' component={Home} />
       <Route exact path='/lists' component={Lists} />
       <Route exact path='/about' component={About} />
+      <Route exact path='/lists/:id' component={List} />
       <Route component={NoMatch} />
     </Switch>
   </Fragment>
